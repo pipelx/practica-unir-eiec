@@ -16,17 +16,23 @@ public class OperacionesAritmeticas {
 	    switch (opcion) {
 	    case 1:
 		// Sumar dos números
-		double[] numerosSuma = obtenerNumeros(input);
-		sumar(numerosSuma[0], numerosSuma[1]);
+		double[] numeros = obtenerNumeros(input);
+		sumar(numeros[0], numeros[1]);
 		break;
 	    case 2:
 		// Restar dos números
+		double[] numeros = obtenerNumeros(input);
+		restar(numeros[0], numeros[1]);
 		break;
 	    case 3:
 		// Multiplicar dos números
+		double[] numeros = obtenerNumeros(input);
+		multiplicar(numeros[0], numeros[1]);
 		break;
 	    case 4:
 		// Dividir dos números
+		double[] numeros = obtenerNumeros(input);
+		dividir(numeros[0], numeros[1]);
 		break;
 	    case 0:
 		// Salir del programa
@@ -75,12 +81,18 @@ public class OperacionesAritmeticas {
     }
 
     public static void restar(double num1, double num2) {
+		double resultado = num1 - num2;
+		System.out.println("El resultado de la resta es: " + resultado);
     }
 
     public static void multiplicar(double num1, double num2) {
+		double resultado = num1 * num2;
+		System.out.println("El resultado de la multiplicacion es: " + resultado);
     }
 
     public static void dividir(double num1, double num2) {
+		double resultado = num1 / num2;
+		System.out.println("El resultado de la dividir es: " + resultado);
     }
 
 }
