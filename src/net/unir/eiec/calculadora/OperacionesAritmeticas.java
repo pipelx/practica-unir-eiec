@@ -9,16 +9,8 @@ public class OperacionesAritmeticas {
 	int opcion;
 
 	do {
-	    // Mostrar menú de opciones
-	    System.out.println("Menu de operaciones:");
-	    System.out.println("1. Sumar");
-	    System.out.println("2. Restar");
-	    System.out.println("3. Multiplicar");
-	    System.out.println("4. Dividir");
-	    System.out.println("0. Salir");
 
-	    // Leer opción seleccionada por el usuario
-	    System.out.print("Seleccione una opcion: ");
+	    menu();
 	    opcion = input.nextInt();
 
 	    switch (opcion) {
@@ -51,6 +43,19 @@ public class OperacionesAritmeticas {
 	} while (opcion != 0);
 
 	input.close(); // Cerrar scanner
+    }
+
+    public static void menu() {
+	// Mostrar menú de opciones
+	System.out.println("Menu de operaciones:");
+	System.out.println("1. Sumar");
+	System.out.println("2. Restar");
+	System.out.println("3. Multiplicar");
+	System.out.println("4. Dividir");
+	System.out.println("0. Salir");
+
+	// Leer opción seleccionada por el usuario
+	System.out.print("Seleccione una opcion: ");
     }
 
     // Método para obtener dos números de entrada
